@@ -1,4 +1,6 @@
 import Cube from "@/components/Cube";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header/Header";
 import { Box, Button, Link, Stack, Toolbar, Typography } from "@mui/material";
 
 import type { NextPage } from "next";
@@ -22,58 +24,87 @@ const Home: NextPage = () => {
         <Box
           sx={{ maxWidth: "1600px", margin: "0 auto", padding: "0rem 2rem" }}
         >
-          <Toolbar>
-            <Typography variant="header.title">BLOCKTECH 2022</Typography>
-            <Stack
-              direction="row"
-              sx={{ ml: "auto", display: { xs: "none", sm: "block" } }}
-              spacing={4}
-            >
-              <Link>
-                <Typography variant="header.nav">PARTICIPACION</Typography>
-              </Link>
-              <Link>
-                <Typography variant="header.nav">DONAR</Typography>
-              </Link>
-              <Link>
-                <Typography variant="header.nav">A CERCA DE</Typography>
-              </Link>
-
-              <Link
-                href="https://t.me/+kIpoL32xL8owOTJh
-"
-              >
-                <Typography variant="header.nav">TELEGRAM</Typography>
-              </Link>
-            </Stack>
-          </Toolbar>
+          <Header />
           <Stack
             direction="column"
             alignItems="center"
             justifyContent="center"
-            spacing={6}
-            sx={{ margin: "2rem 0rem", minHeight: "634px" }}
+            spacing={10}
+            sx={{ margin: "2rem 0rem", minHeight: "85vh" }}
           >
             <Cube />
             <Button variant="button.main">Registrarse</Button>
-            <Box>
+            <Stack
+              direction={{ ex: "column", sm: "row" }}
+              alignItems="center"
+              justifyContent="center"
+              spacing={3}
+            >
               <Typography variant="sections.title">PRESENTADO POR</Typography>
-            </Box>
+              <Box mt="2rem">
+                <Box
+                  component="img"
+                  src="/blockchain_nica.jpg"
+                  alt="blockcain 505"
+                  width={80}
+                  height={80}
+                  mr="2rem"
+                />
+                <Box
+                  component="img"
+                  src="/coincaex.png"
+                  alt="coincaex"
+                  width={100}
+                  height={80}
+                />
+              </Box>
+            </Stack>
           </Stack>
           <Stack
             direction="column"
             alignItems="flex-start"
             justifyContent="center"
             spacing={4}
-            sx={{ minHeight: "634px" }}
+            sx={{ minHeight: "85vh" }}
           >
             <Typography variant="sections.title">PREPARATE</Typography>
 
             <Typography variant="body2">
               BLOCKTECH ES PARA TODOS. TANTO PARA LOS QUE RECIEN COMIENZAN, COMO
               PARA LOS QUE HACEN TRADING, DESARROLLADORES E INVERSORES QUE
-              DESEEN UTILIZAR TECNOLOGIAS BLOCKCHAIN EN SUS NEGOCIOS.
+              DESEEN UTILIZAR TECNOLOGIAS BLOCKCHAIN EN SUS NEGOCIOS. CON LA
+              PARTICIPACION DE GRANDES PERSONAJES DEL MUNDO BLOCKCHAIN E
+              INTERNET DE LA REGION.
             </Typography>
+
+            <Button variant="button.main">Registrarse</Button>
+
+            <Stack
+              sx={{
+                flexDirection: { ex: "column", sm: "row" },
+                width: "100%",
+                ">div": {
+                  marginRight: { sm: "1rem" },
+                },
+              }}
+            >
+              <Tweet tweetId="1536113917528788993" />
+              <Tweet tweetId="1580252250425131009" />
+            </Stack>
+          </Stack>
+
+          <Stack
+            direction="column"
+            alignItems="flex-start"
+            justifyContent="center"
+            spacing={4}
+            sx={{ minHeight: "85vh" }}
+          >
+            <Typography variant="sections.title">PARTICIPACIÓN</Typography>
+
+	    <Typography variant="body2">
+		
+	    </Typography>
 
             <Button variant="button.main">Registrarse</Button>
 
@@ -96,7 +127,7 @@ const Home: NextPage = () => {
             alignItems="center"
             justifyContent="center"
             spacing={4}
-            sx={{ minHeight: "634px" }}
+            sx={{ minHeight: "85vh" }}
           >
             <Box
               component="img"
@@ -112,32 +143,9 @@ const Home: NextPage = () => {
 
             <Button variant="button.main">Donar</Button>
           </Stack>
-
-          <Stack
-            sx={{
-              minHeight: "634px",
-            }}
-            spacing={4}
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Box>
-              <Typography variant="sections.title">PRESENTADO POR</Typography>
-            </Box>
-
-            <Box>
-              <Typography variant="sections.title">CON EL APOYO DE</Typography>
-            </Box>
-          </Stack>
         </Box>
       </main>
-      <footer>
-        <Box sx={{ marginTop: "auto" }}>
-          <Typography variant="sections.title">
-            This is the footer xd
-          </Typography>
-        </Box>
-      </footer>
+      <Footer />
     </div>
   );
 };

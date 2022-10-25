@@ -5,6 +5,8 @@ declare module "@mui/material/Typography" {
     "header.title": true;
     "header.nav": true;
     "sections.title": true;
+    title: true;
+    "share.social": true;
   }
 }
 
@@ -42,11 +44,26 @@ const theme = createTheme({
           },
         },
         {
+          props: { variant: "title" },
+          style: {
+            color: "#fff",
+            fontWeight: "bold",
+            fontSize: "1.4rem",
+          },
+        },
+        {
           props: { variant: "header.nav" },
           style: {
             color: "#fff",
             fontWeight: "bold",
             fontSize: "1rem",
+            cursor: "pointer",
+          },
+        },
+        {
+          props: { variant: "share.social" },
+          style: {
+            color: "#fff !important",
             cursor: "pointer",
           },
         },
