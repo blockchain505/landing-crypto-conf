@@ -1,7 +1,7 @@
 import Cube from "@/components/Cube";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header/Header";
-import { Box, Button, Link, Stack, Toolbar, Typography } from "@mui/material";
+import Header from "@/components/Header";
+import { Box, Button, Stack, Typography } from "@mui/material";
 
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -102,9 +102,7 @@ const Home: NextPage = () => {
           >
             <Typography variant="sections.title">PARTICIPACIÓN</Typography>
 
-	    <Typography variant="body2">
-		
-	    </Typography>
+            <Typography variant="body2"></Typography>
 
             <Button variant="button.main">Registrarse</Button>
 
