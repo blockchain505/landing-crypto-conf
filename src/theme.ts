@@ -29,6 +29,7 @@ const theme = createTheme({
       color: "#fff",
       fontFamily: "Poppins",
       fontSize: "1rem",
+      textTransform: "uppercase",
     },
   },
   components: {

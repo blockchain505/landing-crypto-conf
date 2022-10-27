@@ -5,9 +5,14 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 import React from "react";
 import { Tweet } from "react-twitter-widgets";
+
+import ApartmentIcon from "@mui/icons-material/Apartment";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import RegisterButton from "@/components/RegisterButton";
 
 const Home: NextPage = () => {
   return (
@@ -33,7 +38,7 @@ const Home: NextPage = () => {
             sx={{ margin: "2rem 0rem", minHeight: "85vh" }}
           >
             <Cube />
-            <Button variant="button.main">Registrarse</Button>
+            <RegisterButton />
             <Stack
               direction={{ ex: "column", sm: "row" }}
               alignItems="center"
@@ -41,13 +46,13 @@ const Home: NextPage = () => {
               spacing={3}
             >
               <Typography variant="sections.title">PRESENTADO POR</Typography>
-              <Box mt="2rem">
+              <Box mt="2rem" sx={{ display: "flex", alignItems: "flex-start" }}>
                 <Box
                   component="img"
-                  src="/blockchain_nica.jpg"
+                  src="https://services-project.s3.us-east-2.amazonaws.com/logo_sin_fondo.png"
                   alt="blockcain 505"
-                  width={80}
-                  height={80}
+                  width={100}
+                  height={100}
                   mr="2rem"
                 />
                 <Box
@@ -72,12 +77,13 @@ const Home: NextPage = () => {
             <Typography variant="body2">
               BLOCKTECH ES PARA TODOS. TANTO PARA LOS QUE RECIEN COMIENZAN, COMO
               PARA LOS QUE HACEN TRADING, DESARROLLADORES E INVERSORES QUE
-              DESEEN UTILIZAR TECNOLOGIAS BLOCKCHAIN EN SUS NEGOCIOS. CON LA
-              PARTICIPACION DE GRANDES PERSONAJES DEL MUNDO BLOCKCHAIN E
-              INTERNET DE LA REGION.
+              DESEEN UTILIZAR TECNOLOGIAS BLOCKCHAIN EN SUS NEGOCIOS.BLOCKTECH
+              ES PARA TODOS. TANTO PARA LOS QUE RECIEN COMIENZAN, COMO PARA LOS
+              QUE HACEN TRADING, DESARROLLADORES E INVERSORES QUE DESEEN
+              UTILIZAR TECNOLOGIAS BLOCKCHAIN EN SUS NEGOCIOS.
             </Typography>
 
-            <Button variant="button.main">Registrarse</Button>
+            <RegisterButton />
 
             <Stack
               sx={{
@@ -100,24 +106,54 @@ const Home: NextPage = () => {
             spacing={4}
             sx={{ minHeight: "85vh" }}
           >
-            <Typography variant="sections.title">PARTICIPACIÓN</Typography>
+            <Typography variant="sections.title">NO TE LO PERDAS!</Typography>
 
-            <Typography variant="body2"></Typography>
-
-            <Button variant="button.main">Registrarse</Button>
-
-            <Stack
-              sx={{
-                flexDirection: { ex: "column", sm: "row" },
-                width: "100%",
-                ">div": {
-                  marginRight: { sm: "1rem" },
-                },
+            <Box
+              display="grid"
+              gridTemplateColumns={{
+                xs: "repeat(1, 1fr)",
+                sm: "repeat(3, 1fr)",
               }}
+              gap={8}
+              sx={{ marginTop: "3rem !important" }}
             >
-              <Tweet tweetId="1536113917528788993" />
-              <Tweet tweetId="1580252250425131009" />
-            </Stack>
+              <Stack
+                direction="row"
+                color="common.white"
+                spacing={3}
+                sx={{ maxWidth: "20rem" }}
+              >
+                <ApartmentIcon sx={{ fontSize: "4.5rem" }} />
+                <Box>
+                  <Typography
+                    sx={{ fontWeight: "bold", textTransform: "uppercase" }}
+                  >
+                    Donde?
+                  </Typography>
+                  <Typography>
+                    CENTRO DE CONVENCIONES DEL HOTEL CROWNE PLAZA
+                  </Typography>
+                </Box>
+              </Stack>
+              <Stack
+                direction="row"
+                color="common.white"
+                spacing={3}
+                sx={{ maxWidth: "20rem" }}
+              >
+                <CalendarMonthIcon sx={{ fontSize: "4.5rem" }} />
+                <Box>
+                  <Typography
+                    sx={{ fontWeight: "bold", textTransform: "uppercase" }}
+                  >
+                    Cuando?
+                  </Typography>
+                  <Typography>SABADO 16 DE NOVIEMBRE</Typography>
+
+                  <Typography>DE 9:00 A 1:00 PM</Typography>
+                </Box>
+              </Stack>
+            </Box>
           </Stack>
 
           <Stack
@@ -139,7 +175,9 @@ const Home: NextPage = () => {
               NICARAGUA, POR UN MUNDO DESCENTRALIZADO
             </Typography>
 
-            <Button variant="button.main">Donar</Button>
+            <Link href="/donate">
+              <Button variant="button.main">Donar</Button>
+            </Link>
           </Stack>
         </Box>
       </main>

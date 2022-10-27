@@ -17,13 +17,13 @@ const Sponsors = () => {
           spacing={6}
         >
           <Typography variant="sections.title">PRESENTADO POR</Typography>
-          <Stack direction="row" alignItems="flex-end" spacing={10}>
+          <Stack direction="row" alignItems="flex-start" spacing={10}>
             <Box
               component="img"
-              src="/blockchain_nica.jpg"
+              src="https://services-project.s3.us-east-2.amazonaws.com/logo_sin_fondo.png"
               alt="blockcain 505"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
             />
             <Box
               component="img"
@@ -42,13 +42,13 @@ const Sponsors = () => {
           spacing={6}
         >
           <Typography variant="sections.title">CON EL APOYO DE</Typography>
-          <Stack direction="row" alignItems="flex-end" spacing={10}>
+          <Stack direction="row" alignItems="flex-start" spacing={10}>
             <Box
               component="img"
-              src="/blockchain_nica.jpg"
+              src="https://services-project.s3.us-east-2.amazonaws.com/logo_sin_fondo.png"
               alt="blockcain 505"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
             />
             <Box
               component="img"
