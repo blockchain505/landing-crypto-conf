@@ -31,13 +31,25 @@ const Social = () => {
             <Stack>
               <Typography variant="title">COMPARTIR</Typography>
               <Stack direction="column" spacing={2} mt={2}>
-                <Link variant="share.social" underline="hover">
+                <Link
+                  href="https://twitter.com/share?url=https%3A%2F%2Fblocktechni.com&text=Asistire%20a%20la%20Blocktech%202022!!.%20Ayudemos%20a%20promover%20el%20uso%20de%20blockchain.%20Por%20un%20mundo%20descentralizado."
+                  variant="share.social"
+                  underline="hover"
+                >
                   TWITTER
                 </Link>
-                <Link variant="share.social" underline="hover">
+                <Link
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblocktechni.com"
+                  variant="share.social"
+                  underline="hover"
+                >
                   FACEBOOK
                 </Link>
-                <Link variant="share.social" underline="hover">
+                <Link
+                  href="https://www.linkedin.com/sharing/share-offsite/?url=blocktechni.com"
+                  variant="share.social"
+                  underline="hover"
+                >
                   LINKEDIN
                 </Link>
               </Stack>
@@ -45,16 +57,32 @@ const Social = () => {
             <Stack>
               <Typography variant="title">SIGUENOS</Typography>
               <Stack direction="column" spacing={2} mt={2}>
-                <Link variant="share.social" underline="hover">
+                <Link
+                  href="https://twitter.com/505Blockchain"
+                  variant="share.social"
+                  underline="hover"
+                >
                   TWITTER
                 </Link>
-                <Link variant="share.social" underline="hover">
+                <Link
+                  href="https://www.facebook.com/blockchain505nic"
+                  variant="share.social"
+                  underline="hover"
+                >
                   FACEBOOK
                 </Link>
-                <Link variant="share.social" underline="hover">
+                <Link
+                  href="https://www.linkedin.com/company/blockchain-nicaragua/"
+                  variant="share.social"
+                  underline="hover"
+                >
                   LINKEDIN
                 </Link>
-                <Link variant="share.social" underline="hover">
+                <Link
+                  href="https://t.me/+kIpoL32xL8owOTJh"
+                  variant="share.social"
+                  underline="hover"
+                >
                   TELEGRAM
                 </Link>
               </Stack>
