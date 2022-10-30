@@ -1,16 +1,19 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Alert, Box, Snackbar, Stack, Typography } from "@mui/material";
 import {
   BITCOIN_IMAGE,
   BITCOIN_PUBLIC_KEY,
   ETHEREUM_IMAGE,
   ETHEREUM_PUBLIC_KEY,
 } from "@/config";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import DonateMethod from "./DonateMethod";
 
 const Donate = () => {
+  const [openSuccessful, setOpenSuccessful] = useState(false);
+
   const copyToClickboard = useCallback((value: string): void => {
     navigator.clipboard.writeText(value);
+    setOpenSuccessful(true);
   }, []);
 
   return (
@@ -21,6 +24,19 @@ const Donate = () => {
       spacing={4}
       sx={{ minHeight: "85vh", padding: "1rem 24px 0" }}
     >
+      <Snackbar
+        open={openSuccessful}
+        autoHideDuration={6000}
+        onClose={() => setOpenSuccessful(false)}
+      >
+        <Alert
+          onClose={() => setOpenSuccessful(false)}
+          severity="success"
+          sx={{ width: "100%" }}
+        >
+          Direccion copiada
+        </Alert>
+      </Snackbar>
       <Typography variant="sections.title">DONAR</Typography>
 
       <Typography variant="body2">
