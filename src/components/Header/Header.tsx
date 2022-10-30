@@ -7,7 +7,7 @@ import RegisterButton from "../RegisterButton";
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState<boolean>(false);
   return (
-    <Toolbar>
+    <Toolbar sx={{ padding: { xs: "0" } }}>
       <NextLink href="/">
         <Link underline="none">
           <Typography variant="header.title">BLOCKTECH 2022</Typography>
@@ -21,6 +21,7 @@ const Header = () => {
           fontSize: "1.2rem",
           fontWeight: "bold",
           cursor: "pointer",
+          display: { xs: "flex", sm: "none" },
         }}
         onClick={() => setOpenDrawer(true)}
       >
