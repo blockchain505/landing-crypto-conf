@@ -180,7 +180,7 @@ const About = () => {
             <Typography sx={{ fontWeight: "bold", textTransform: "uppercase" }}>
               Cuando?
             </Typography>
-            <Typography>SABADO 16 DE NOVIEMBRE</Typography>
+            <Typography>SABADO 19 DE NOVIEMBRE</Typography>
 
             <Typography>DE 9:00 A 1:00 PM</Typography>
           </Box>
