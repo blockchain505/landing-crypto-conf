@@ -19,7 +19,7 @@ const About = () => {
       alignItems="flex-start"
       justifyContent="flex-start"
       spacing={4}
-      sx={{ minHeight: "85vh", padding: "1rem 24px 0" }}
+      sx={{ minHeight: "85vh", padding: "1rem 0 0" }}
     >
       <Typography variant="sections.title">A CERCA DE</Typography>
 
