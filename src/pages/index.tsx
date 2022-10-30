@@ -77,10 +77,7 @@ const Home: NextPage = () => {
             <Typography variant="body2">
               BLOCKTECH ES PARA TODOS. TANTO PARA LOS QUE RECIEN COMIENZAN, COMO
               PARA LOS QUE HACEN TRADING, DESARROLLADORES E INVERSORES QUE
-              DESEEN UTILIZAR TECNOLOGIAS BLOCKCHAIN EN SUS NEGOCIOS.BLOCKTECH
-              ES PARA TODOS. TANTO PARA LOS QUE RECIEN COMIENZAN, COMO PARA LOS
-              QUE HACEN TRADING, DESARROLLADORES E INVERSORES QUE DESEEN
-              UTILIZAR TECNOLOGIAS BLOCKCHAIN EN SUS NEGOCIOS.
+              DESEEN UTILIZAR TECNOLOGIAS BLOCKCHAIN EN SUS NEGOCIOS.
             </Typography>
 
             <RegisterButton />
@@ -148,7 +145,7 @@ const Home: NextPage = () => {
                   >
                     Cuando?
                   </Typography>
-                  <Typography>SABADO 16 DE NOVIEMBRE</Typography>
+                  <Typography>SABADO 19 DE NOVIEMBRE</Typography>
 
                   <Typography>DE 9:00 A 1:00 PM</Typography>
                 </Box>
