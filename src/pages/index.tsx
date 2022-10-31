@@ -14,6 +14,9 @@ import ApartmentIcon from "@mui/icons-material/Apartment";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import RegisterButton from "@/components/RegisterButton";
 
+//@ts-ignore
+import ScrollUpButton from "react-scroll-up-button";
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -178,6 +181,7 @@ const Home: NextPage = () => {
           </Stack>
         </Box>
       </main>
+      <ScrollUpButton />
       <Footer />
     </div>
   );
