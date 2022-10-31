@@ -52,94 +52,114 @@ const About = () => {
 
       <Typography variant="sections.title">PRESENTADORES</Typography>
       <Typography variant="body2">
-        INVITAMOS A UN TALENTOSO GRUPO DE POINENTES, TODOS SON REFERENCIAS EN
+        INVITAMOS A UN TALENTOSO GRUPO DE PONIENTES, TODOS SON REFERENCIAS EN
         SUS DISTINTOS CAMPOS A NIVEL NACIONAL E INTERNACIONAL.
       </Typography>
 
       <Box
-        display="grid"
-        gridTemplateColumns={{
-          xs: "repeat(1, 1fr)",
-          sm: "repeat(3, 1fr)",
+        display="flex"
+        gap={5}
+        sx={{
+          marginTop: "3rem !important",
+          flexWrap: "wrap",
+          justifyContent: "center",
         }}
-        gap={8}
-        sx={{ marginTop: "3rem !important" }}
       >
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            component="img"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-            alt="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              ADRIANA GONZALEZ
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              TECNOLOGIA Y LOGISTICA
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              TIZO APP
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            component="img"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-            alt="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Luis Mejia
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              DESARROLLADOR BACKEND SENIOR
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              PROMOVER TRABAJO REMOTO
-            </Typography>
-          </CardContent>
-        </Card>
+        <Stack direction={{ xs: "column", sm: "row" }} spacing={5}>
+          <Card sx={{ maxWidth: 345, width: "20rem" }}>
+            <CardMedia
+              component="img"
+              height="300"
+              image="https://services-project.s3.us-east-2.amazonaws.com/Adriana+Gonz%C3%A1lez+Tizo-min.jpg"
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                ADRIANA GONZALEZ
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                TECNOLOGIA Y LOGISTICA
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                TIZO APP
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card sx={{ maxWidth: 345, width: "20rem" }}>
+            <CardMedia
+              component="img"
+              height="300"
+              image="https://services-project.s3.us-east-2.amazonaws.com/Luis+Mej%C3%ADa.jpg"
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                LUIS MEJIA
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                DESARROLLADOR BACKEND SENIOR
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                PROMOVER TRABAJO REMOTO
+              </Typography>
+            </CardContent>
+          </Card>
 
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            component="img"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-            alt="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              ELAINE MIRANDA
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              FINANZAS PERSONALES
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              PLATA CON PLATICA
-            </Typography>
-          </CardContent>
-        </Card>
+          <Card sx={{ maxWidth: 345, width: "20rem" }}>
+            <CardMedia
+              component="img"
+              height="300"
+              image="https://services-project.s3.us-east-2.amazonaws.com/Elaine+Plata+con+pl%C3%A1tica.png"
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                ELAINE MIRANDA
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                FINANZAS PERSONALES
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                PLATA CON PLATICA
+              </Typography>
+            </CardContent>
+          </Card>
+        </Stack>
+        <Stack direction={{ xs: "column", sm: "row" }} spacing={5}>
+          <Card sx={{ maxWidth: 345, width: "20rem" }}>
+            <CardMedia
+              component="img"
+              height="300"
+              image="https://services-project.s3.us-east-2.amazonaws.com/Pedro+Guill%C3%A9n+Coincaex.jpg"
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                JOSE LUIS GUILLEN
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                PRESIDENTE DE COINCAEX
+              </Typography>
+            </CardContent>
+          </Card>
 
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            component="img"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-            alt="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              JOSE LUIS GUILLEN
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              PRESIDENTE DE COINCAEX
-            </Typography>
-          </CardContent>
-        </Card>
+          <Card sx={{ maxWidth: 345, width: "20rem" }}>
+            <CardMedia
+              component="img"
+              height="300"
+              image="https://services-project.s3.us-east-2.amazonaws.com/Alejandro+Arana+Blockchain+Nicaragua.jpg"
+              alt="green iguana"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                ALEJANDRO ARANA
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                FUNDADOR DE BLOCKCHAIN NICARAGUA
+              </Typography>
+            </CardContent>
+          </Card>
+        </Stack>
       </Box>
 
       <Typography variant="sections.title">UBICACION FISICA</Typography>

@@ -66,12 +66,6 @@ const Donate = () => {
           methodWallet={BITCOIN_PUBLIC_KEY}
           copy={copyToClickboard}
         />
-
-        <DonateMethod
-          methodImage={BITCOIN_IMAGE}
-          methodWallet={BITCOIN_PUBLIC_KEY}
-          copy={copyToClickboard}
-        />
       </Box>
     </Stack>
   );
